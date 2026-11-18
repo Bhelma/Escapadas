@@ -1,5 +1,5 @@
 // Service worker: la app funciona aunque no haya cobertura (sin datos en directo)
-const CACHE = 'escapadas-v1';
+const CACHE = 'escapadas-v2';
 const SHELL = ['./', 'index.html', 'app.js', 'sitios.json', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', (e) => {

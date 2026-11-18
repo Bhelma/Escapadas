@@ -5,7 +5,13 @@
 
 const ACTIVIDADES = ['Senderismo corto', 'Baño', 'Monumentos', 'Pueblo', 'Mirador', 'Naturaleza', 'Playa', 'Cueva', 'Gastronomía'];
 const LS = { settings: 'esc.settings', visits: 'esc.visits', times: 'esc.times', plan: 'esc.plan' };
-const DEFAULT_SETTINGS = { home: { nombre: 'Aldaia', lat: 39.4637, lon: -0.4626 }, nc: { url: '', user: '', pass: '', folder: 'Escapadas' } };
+// Ajustes de la app. Para añadir uno nuevo: ponlo aquí con su valor por defecto, añade su control en la pestaña Ajustes
+// (index.html) y léelo con S.settings.ui.<nombre>. Se guarda solo con saveUi().
+const DEFAULT_SETTINGS = {
+  home: { nombre: 'Aldaia', lat: 39.4637, lon: -0.4626 },
+  nc: { url: '', user: '', pass: '', folder: 'Escapadas' },
+  ui: { theme: 'auto' },
+};
 
 const S = {
   db: null, sites: [], settings: null, visits: { version: 1, visitas: [] },
@@ -590,21 +596,35 @@ function renderVisits() {
 }
 
 /* ---------- AJUSTES ---------- */
+const darkMQ = window.matchMedia ? matchMedia('(prefers-color-scheme: dark)') : null;
+function applyTheme() {
+  const t = S.settings.ui.theme;
+  const dark = t === 'dark' || (t === 'auto' && darkMQ?.matches);
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  const meta = document.querySelector('meta[name=theme-color]'); if (meta) meta.content = dark ? '#173a2e' : '#1f5f4a';
+  $$('#themeSeg button').forEach((b) => b.classList.toggle('on', b.dataset.t === t));
+}
+darkMQ?.addEventListener?.('change', () => { if (S.settings?.ui.theme === 'auto') applyTheme(); });
+function saveUi(key, value) { S.settings.ui[key] = value; save(LS.settings, S.settings); }
+
 function renderSettings() {
   const st = S.settings;
   $('#sHomeName').value = st.home.nombre; $('#sHomeLat').value = st.home.lat; $('#sHomeLon').value = st.home.lon;
   $('#sNcUrl').value = st.nc.url; $('#sNcUser').value = st.nc.user; $('#sNcPass').value = st.nc.pass; $('#sNcFolder').value = st.nc.folder;
   $('#dbInfo').textContent = `${S.sites.length} sitios (versión ${S.db.version})`;
+  applyTheme();
 }
 function readSettingsForm() {
   const st = S.settings;
   const homeChanged = st.home.lat !== +$('#sHomeLat').value || st.home.lon !== +$('#sHomeLon').value;
   st.home = { nombre: $('#sHomeName').value.trim() || 'Casa', lat: +$('#sHomeLat').value || DEFAULT_SETTINGS.home.lat, lon: +$('#sHomeLon').value || DEFAULT_SETTINGS.home.lon };
+  st.ui = st.ui || { ...DEFAULT_SETTINGS.ui };
   st.nc = { url: $('#sNcUrl').value.trim(), user: $('#sNcUser').value.trim(), pass: $('#sNcPass').value, folder: $('#sNcFolder').value.trim() || 'Escapadas' };
   save(LS.settings, st);
   return homeChanged;
 }
 function bindSettings() {
+  $('#themeSeg').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; saveUi('theme', b.dataset.t); applyTheme(); });
   $('#btnSaveSettings').onclick = async () => { const hc = readSettingsForm(); toast('Ajustes guardados'); if (hc) { S.times = {}; } await syncVisits(); };
   $('#btnTestNc').onclick = async () => {
     readSettingsForm(); const el = $('#ncStatus');
@@ -644,6 +664,8 @@ function showView(v) {
 async function init() {
   S.settings = Object.assign(structuredClone(DEFAULT_SETTINGS), load(LS.settings, {}));
   S.settings.nc = Object.assign({}, DEFAULT_SETTINGS.nc, S.settings.nc || {});
+  S.settings.ui = Object.assign({}, DEFAULT_SETTINGS.ui, S.settings.ui || {});
+  applyTheme();
   S.visits = load(LS.visits, { version: 1, visitas: [] });
   Object.assign(S.plan, load(LS.plan, {}), { origin: 'home' });
   try { S.db = await fetchJSON('sitios.json?v=' + Date.now()); }
