@@ -1,0 +1,1535 @@
+{
+ "version": "2026-11-18",
+ "origen": {
+  "nombre": "Aldaia",
+  "lat": 39.4637,
+  "lon": -0.4626
+ },
+ "sitios": [
+  {
+   "id": "chulilla-puentes-colgantes-y-charco-azul",
+   "nombre": "Puentes colgantes y Charco Azul",
+   "municipio": "Chulilla",
+   "tipo": "Senderismo / pueblo",
+   "actividades": [
+    "Senderismo corto",
+    "Baño",
+    "Pueblo",
+    "Mirador"
+   ],
+   "min": 55,
+   "km": 60,
+   "dpf": "Buena",
+   "destino": "Chulilla, Valencia",
+   "ida": [
+    "Llíria",
+    "Casinos",
+    "Losa del Obispo"
+   ],
+   "vuelta": [
+    "Villar del Arzobispo",
+    "Pedralba",
+    "Vilamarxant"
+   ],
+   "epoca": "Otoño, invierno, primavera",
+   "avisos": "Verano: mucho calor y poca sombra, ir a primera hora. Fines de semana: el parking de la entrada se llena pronto.",
+   "nieve": "Bajo",
+   "incendios": "Sí",
+   "bano": "Sí, Charco Azul (verano)",
+   "tasas": "Ha tenido tasa de acceso al paraje (1 €/persona): comprobar antes de ir",
+   "comer": "Bares y restaurantes en el pueblo",
+   "picnic": "Sí, junto al río",
+   "quever": "Ruta de los Pantaneros con dos puentes colgantes sobre las hoces del Turia, castillo, casco antiguo",
+   "lat": 39.656,
+   "lon": -0.893,
+   "wiki": "Chulilla"
+  },
+  {
+   "id": "sot-de-chera-el-grunidor-y-anticlinal",
+   "nombre": "El Gruñidor y anticlinal",
+   "municipio": "Sot de Chera",
+   "tipo": "Naturaleza / baño",
+   "actividades": [
+    "Baño",
+    "Naturaleza",
+    "Senderismo corto"
+   ],
+   "min": 55,
+   "km": 60,
+   "dpf": "Buena",
+   "destino": "Sot de Chera, Valencia",
+   "ida": [
+    "Requena",
+    "Chera"
+   ],
+   "vuelta": [
+    "Gestalgar",
+    "Pedralba",
+    "Vilamarxant"
+   ],
+   "epoca": "Primavera, verano (baño), otoño",
+   "avisos": "La zona de baño sufrió daños en la DANA de 2024; reabierta y en recuperación. Verano: muy concurrido.",
+   "nieve": "Bajo",
+   "incendios": "Sí (P. N. Chera-Sot de Chera)",
+   "bano": "Sí, playa fluvial (verano)",
+   "tasas": "Consultar al ayuntamiento en verano",
+   "comer": "Bares en el pueblo",
+   "picnic": "Sí",
+   "quever": "Playa fluvial del río Sot, anticlinal (pliegue geológico), castillo",
+   "lat": 39.634,
+   "lon": -0.91,
+   "wiki": "Sot de Chera"
+  },
+  {
+   "id": "chera-embalse-de-buseo-y-rutas-geologicas",
+   "nombre": "Embalse de Buseo y rutas geológicas",
+   "municipio": "Chera",
+   "tipo": "Naturaleza / geología",
+   "actividades": [
+    "Naturaleza",
+    "Senderismo corto"
+   ],
+   "min": 60,
+   "km": 70,
+   "dpf": "Buena",
+   "destino": "Chera, Valencia",
+   "ida": [
+    "Requena"
+   ],
+   "vuelta": [
+    "Sot de Chera",
+    "Gestalgar",
+    "Vilamarxant"
+   ],
+   "epoca": "Primavera, otoño",
+   "avisos": "Invierno: posibles heladas en las carreteras de montaña.",
+   "nieve": "Medio",
+   "incendios": "Sí (P. N. Chera-Sot de Chera)",
+   "bano": "No",
+   "tasas": "Libre",
+   "comer": "Restaurantes en Chera",
+   "picnic": "Sí, área recreativa del embalse",
+   "quever": "Rutas geológicas del parque natural, embalse de Buseo, castillo",
+   "lat": 39.591,
+   "lon": -0.968,
+   "wiki": "Chera (Valencia)"
+  },
+  {
+   "id": "gestalgar-playa-fluvial-del-turia",
+   "nombre": "Playa fluvial del Turia",
+   "municipio": "Gestalgar",
+   "tipo": "Baño / río",
+   "actividades": [
+    "Baño",
+    "Naturaleza"
+   ],
+   "min": 45,
+   "km": 45,
+   "dpf": "Buena",
+   "destino": "Gestalgar, Valencia",
+   "ida": [
+    "Llíria",
+    "Pedralba",
+    "Bugarra"
+   ],
+   "vuelta": [
+    "Bugarra",
+    "Vilamarxant",
+    "Riba-roja de Túria"
+   ],
+   "epoca": "Verano (baño), primavera",
+   "avisos": "Verano: aparcamiento de pago y lleno los fines de semana. Tras lluvias fuertes, revisar el caudal.",
+   "nieve": "Bajo",
+   "incendios": "Sí",
+   "bano": "Sí, río Turia (verano)",
+   "tasas": "Aparcamiento con tasa municipal en temporada",
+   "comer": "Bares en el pueblo",
+   "picnic": "Sí",
+   "quever": "Playa fluvial, Peña María, paseo junto al Turia",
+   "lat": 39.605,
+   "lon": -0.836,
+   "wiki": "Gestalgar"
+  },
+  {
+   "id": "chelva-ruta-del-agua-y-acueducto-de-pena-cortada",
+   "nombre": "Ruta del Agua y acueducto de Peña Cortada",
+   "municipio": "Chelva",
+   "tipo": "Senderismo / pueblo",
+   "actividades": [
+    "Pueblo",
+    "Senderismo corto",
+    "Baño",
+    "Monumentos"
+   ],
+   "min": 65,
+   "km": 75,
+   "dpf": "Buena",
+   "destino": "Chelva, Valencia",
+   "ida": [
+    "Llíria",
+    "Casinos",
+    "Losa del Obispo",
+    "Calles"
+   ],
+   "vuelta": [
+    "Chulilla",
+    "Villar del Arzobispo",
+    "Llíria"
+   ],
+   "epoca": "Primavera, otoño, verano (baño)",
+   "avisos": "Verano: tasa en La Playeta y Olinches. Invierno: heladas ocasionales en La Serranía.",
+   "nieve": "Medio",
+   "incendios": "Sí",
+   "bano": "Sí, La Playeta (verano)",
+   "tasas": "Tasa de acceso en verano a La Playeta y Olinches",
+   "comer": "Restaurantes en Chelva",
+   "picnic": "Sí, área recreativa Molino Puerto",
+   "quever": "Ruta del Agua por el barrio andalusí, La Playeta, acueducto romano de Peña Cortada (ruta aparte)",
+   "lat": 39.749,
+   "lon": -0.997,
+   "wiki": "Chelva"
+  },
+  {
+   "id": "tuejar-azud-y-nacimiento-del-rio-tuejar",
+   "nombre": "Azud y nacimiento del río Tuéjar",
+   "municipio": "Tuéjar",
+   "tipo": "Baño / río",
+   "actividades": [
+    "Baño",
+    "Naturaleza"
+   ],
+   "min": 70,
+   "km": 80,
+   "dpf": "Buena",
+   "destino": "Tuéjar, Valencia",
+   "ida": [
+    "Llíria",
+    "Casinos",
+    "Calles",
+    "Chelva"
+   ],
+   "vuelta": [
+    "Chelva",
+    "Calles",
+    "Chulilla",
+    "Villar del Arzobispo"
+   ],
+   "epoca": "Verano",
+   "avisos": "Agua muy fría (unos 18 ºC). Invierno: hielo posible.",
+   "nieve": "Medio",
+   "incendios": "Sí",
+   "bano": "Sí, agua fría todo el año",
+   "tasas": "Consultar en verano",
+   "comer": "Bares en el pueblo",
+   "picnic": "Sí",
+   "quever": "Laguna del Azud, nacimiento del río",
+   "lat": 39.763,
+   "lon": -1.031,
+   "wiki": "Tuéjar"
+  },
+  {
+   "id": "bunol-castillo-y-cueva-turche",
+   "nombre": "Castillo y Cueva Turche",
+   "municipio": "Buñol",
+   "tipo": "Pueblo / naturaleza",
+   "actividades": [
+    "Pueblo",
+    "Monumentos",
+    "Naturaleza"
+   ],
+   "min": 25,
+   "km": 30,
+   "dpf": "Alargar",
+   "destino": "Buñol, Valencia",
+   "ida": [
+    "Chiva",
+    "Siete Aguas"
+   ],
+   "vuelta": [
+    "Yátova",
+    "Macastre",
+    "Godelleta"
+   ],
+   "epoca": "Todo el año",
+   "avisos": "Último miércoles de agosto: Tomatina (pueblo colapsado).",
+   "nieve": "Bajo",
+   "incendios": "Sí (paraje de la Cueva Turche)",
+   "bano": "Comprobar",
+   "tasas": "Libre",
+   "comer": "Muchos restaurantes",
+   "picnic": "Sí, paraje de la Cueva Turche",
+   "quever": "Castillo, casco antiguo, salto de agua del Turche",
+   "lat": 39.42,
+   "lon": -0.79,
+   "wiki": "Buñol"
+  },
+  {
+   "id": "yatova-cueva-de-las-palomas",
+   "nombre": "Cueva de las Palomas",
+   "municipio": "Yátova",
+   "tipo": "Naturaleza / baño",
+   "actividades": [
+    "Baño",
+    "Naturaleza"
+   ],
+   "min": 35,
+   "km": 40,
+   "dpf": "Alargar",
+   "destino": "Yátova, Valencia",
+   "ida": [
+    "Chiva",
+    "Buñol"
+   ],
+   "vuelta": [
+    "Macastre",
+    "Godelleta",
+    "Torrent"
+   ],
+   "epoca": "Primavera, otoño, verano",
+   "avisos": "Verano: carretera de acceso cerrada a coches; prohibido entrar mesas, sillas, neveras y sombrillas a la zona de baño.",
+   "nieve": "Bajo",
+   "incendios": "Sí",
+   "bano": "Sí (verano)",
+   "tasas": "Acceso en coche restringido en verano",
+   "comer": "Bares en Yátova",
+   "picnic": "Sí; fuego solo en paelleros habilitados",
+   "quever": "Paraje con zona de baño y paelleros",
+   "lat": 39.385,
+   "lon": -0.805,
+   "wiki": "Yátova"
+  },
+  {
+   "id": "requena-barrio-de-la-villa-y-cuevas",
+   "nombre": "Barrio de la Villa y cuevas",
+   "municipio": "Requena",
+   "tipo": "Pueblo / gastronomía",
+   "actividades": [
+    "Pueblo",
+    "Monumentos",
+    "Gastronomía"
+   ],
+   "min": 40,
+   "km": 60,
+   "dpf": "Buena",
+   "destino": "Requena, Valencia",
+   "ida": [],
+   "vuelta": [
+    "Siete Aguas",
+    "Buñol",
+    "Godelleta"
+   ],
+   "epoca": "Todo el año; otoño (vendimia)",
+   "avisos": "Invierno: en temporales la A-3 en Requena puede tener restricciones por nieve.",
+   "nieve": "Medio",
+   "incendios": "No",
+   "bano": "No",
+   "tasas": "Cuevas y bodegas con entrada",
+   "comer": "Muchos restaurantes; embutido y vino",
+   "picnic": "No hace falta",
+   "quever": "Barrio medieval de la Villa, cuevas bajo el casco, bodegas",
+   "lat": 39.488,
+   "lon": -1.1,
+   "wiki": "Requena"
+  },
+  {
+   "id": "cortes-de-pallas-muela-y-canon-del-jucar",
+   "nombre": "Muela y cañón del Júcar",
+   "municipio": "Cortes de Pallás",
+   "tipo": "Naturaleza / miradores",
+   "actividades": [
+    "Mirador",
+    "Naturaleza",
+    "Monumentos"
+   ],
+   "min": 70,
+   "km": 75,
+   "dpf": "Buena",
+   "destino": "Cortes de Pallás, Valencia",
+   "ida": [
+    "Turís",
+    "Dos Aguas"
+   ],
+   "vuelta": [
+    "Cofrentes",
+    "Requena"
+   ],
+   "epoca": "Primavera, otoño",
+   "avisos": "Carretera de muchas curvas. Verano: calor.",
+   "nieve": "Medio",
+   "incendios": "Sí",
+   "bano": "No",
+   "tasas": "Libre",
+   "comer": "Restaurantes en el pueblo",
+   "picnic": "Sí",
+   "quever": "Muela de Cortes, castillo de Chirel, embalse y cañón del Júcar",
+   "lat": 39.244,
+   "lon": -0.938,
+   "wiki": "Cortes de Pallás"
+  },
+  {
+   "id": "xativa-castillo-y-casco-historico",
+   "nombre": "Castillo y casco histórico",
+   "municipio": "Xàtiva",
+   "tipo": "Ciudad monumental",
+   "actividades": [
+    "Monumentos",
+    "Pueblo",
+    "Gastronomía"
+   ],
+   "min": 45,
+   "km": 60,
+   "dpf": "Buena",
+   "destino": "Xàtiva, Valencia",
+   "ida": [],
+   "vuelta": [
+    "Barxeta",
+    "Alzira",
+    "Benifaió"
+   ],
+   "epoca": "Otoño, invierno, primavera",
+   "avisos": "Verano: la subida al castillo es muy calurosa.",
+   "nieve": "Bajo",
+   "incendios": "No",
+   "bano": "No",
+   "tasas": "Castillo con entrada: consultar horario",
+   "comer": "Muchos restaurantes (arroz al horno)",
+   "picnic": "No hace falta",
+   "quever": "Castillo, colegiata, Fuente de los 25 caños, casco antiguo",
+   "lat": 38.99,
+   "lon": -0.518,
+   "wiki": "Játiva"
+  },
+  {
+   "id": "anna-albufera-de-anna-y-gorgo-de-la-escalera",
+   "nombre": "Albufera de Anna y Gorgo de la Escalera",
+   "municipio": "Anna",
+   "tipo": "Baño / naturaleza",
+   "actividades": [
+    "Baño",
+    "Naturaleza",
+    "Senderismo corto"
+   ],
+   "min": 55,
+   "km": 70,
+   "dpf": "Buena",
+   "destino": "Albufera de Anna, Anna, Valencia",
+   "ida": [
+    "Xàtiva",
+    "Sellent"
+   ],
+   "vuelta": [
+    "Chella",
+    "Navarrés",
+    "Enguera"
+   ],
+   "epoca": "Verano (baño), primavera, otoño",
+   "avisos": "Verano: tasa (2 €, o 3 € conjunta con la Albufera) y mucha gente. Fuera del verano el acceso es libre, pero cierra la actividad de la Albufera. 136 escalones para bajar al Gorgo.",
+   "nieve": "Bajo",
+   "incendios": "Sí",
+   "bano": "Sí: Gorgo y piscina de la Albufera (verano); en el lago no",
+   "tasas": "Tasa en verano; libre el resto del año",
+   "comer": "Restaurantes y chiringuitos en la Albufera (temporada)",
+   "picnic": "Sí; prohibido montar carpas en el Gorgo",
+   "quever": "Lago, cascada del Salto, ruta de las fuentes, Gorgo Catalán",
+   "lat": 39.022,
+   "lon": -0.646,
+   "wiki": "Anna (Valencia)"
+  },
+  {
+   "id": "chella-salto-de-chella-y-fuente-de-bolbaite",
+   "nombre": "Salto de Chella y fuente de Bolbaite",
+   "municipio": "Chella",
+   "tipo": "Naturaleza / cascadas",
+   "actividades": [
+    "Naturaleza",
+    "Mirador",
+    "Senderismo corto"
+   ],
+   "min": 55,
+   "km": 70,
+   "dpf": "Buena",
+   "destino": "Chella, Valencia",
+   "ida": [
+    "Xàtiva",
+    "Anna"
+   ],
+   "vuelta": [
+    "Bolbaite",
+    "Navarrés",
+    "Enguera"
+   ],
+   "epoca": "Primavera, otoño (con caudal)",
+   "avisos": "Verano: poco caudal. Después de lluvias el salto luce mucho más.",
+   "nieve": "Bajo",
+   "incendios": "Sí",
+   "bano": "Comprobar",
+   "tasas": "Libre",
+   "comer": "Bares en Chella y Bolbaite",
+   "picnic": "Sí",
+   "quever": "Cascada del Salto de Chella, fuente de Bolbaite",
+   "lat": 39.043,
+   "lon": -0.66,
+   "wiki": "Chella"
+  },
+  {
+   "id": "bocairent-covetes-dels-moros-y-casco-antiguo",
+   "nombre": "Covetes dels Moros y casco antiguo",
+   "municipio": "Bocairent",
+   "tipo": "Pueblo / cuevas",
+   "actividades": [
+    "Pueblo",
+    "Monumentos",
+    "Cueva"
+   ],
+   "min": 65,
+   "km": 90,
+   "dpf": "Buena",
+   "destino": "Bocairent, Valencia",
+   "ida": [
+    "Xàtiva",
+    "Ontinyent"
+   ],
+   "vuelta": [
+    "Agullent",
+    "Albaida",
+    "Llutxent",
+    "Quatretonda"
+   ],
+   "epoca": "Primavera, otoño, invierno con sol",
+   "avisos": "Invierno: puede nevar en la Sierra de Mariola. Las Covetes tienen horario de visita.",
+   "nieve": "Medio",
+   "incendios": "Parcial (Sierra de Mariola)",
+   "bano": "No",
+   "tasas": "Entrada a Covetes y museos",
+   "comer": "Restaurantes en el pueblo",
+   "picnic": "Sí",
+   "quever": "Cuevas excavadas en la roca, casco medieval, plaza de toros excavada en la roca, Barranc de la Fos",
+   "lat": 38.766,
+   "lon": -0.612,
+   "wiki": "Bocairente"
+  },
+  {
+   "id": "ontinyent-pou-clar",
+   "nombre": "Pou Clar",
+   "municipio": "Ontinyent",
+   "tipo": "Baño / río",
+   "actividades": [
+    "Baño",
+    "Naturaleza"
+   ],
+   "min": 60,
+   "km": 85,
+   "dpf": "Buena",
+   "destino": "Pou Clar, Ontinyent, Valencia",
+   "ida": [
+    "Xàtiva"
+   ],
+   "vuelta": [
+    "Albaida",
+    "Llutxent",
+    "Quatretonda"
+   ],
+   "epoca": "Verano (baño), primavera",
+   "avisos": "Verano: lleno los fines de semana.",
+   "nieve": "Bajo",
+   "incendios": "Sí",
+   "bano": "Sí (verano)",
+   "tasas": "Consultar en verano",
+   "comer": "Restaurantes en Ontinyent",
+   "picnic": "Sí",
+   "quever": "Pozas del río Clariano",
+   "lat": 38.81,
+   "lon": -0.61,
+   "wiki": "Onteniente"
+  },
+  {
+   "id": "moixent-la-bastida-de-les-alcusses",
+   "nombre": "La Bastida de les Alcusses",
+   "municipio": "Moixent",
+   "tipo": "Arqueología",
+   "actividades": [
+    "Monumentos",
+    "Senderismo corto"
+   ],
+   "min": 55,
+   "km": 80,
+   "dpf": "Buena",
+   "destino": "La Bastida de les Alcusses, Moixent, Valencia",
+   "ida": [
+    "Xàtiva"
+   ],
+   "vuelta": [
+    "Enguera",
+    "Anna",
+    "Sellent"
+   ],
+   "epoca": "Otoño, invierno, primavera",
+   "avisos": "Verano: muy expuesto al sol. Horario de visita reducido.",
+   "nieve": "Bajo",
+   "incendios": "Sí",
+   "bano": "No",
+   "tasas": "Consultar horario",
+   "comer": "En Moixent",
+   "picnic": "Sí, llevar comida",
+   "quever": "Poblado ibérico donde apareció el Guerrer de Moixent",
+   "lat": 38.82,
+   "lon": -0.78,
+   "wiki": "La Bastida de les Alcusses"
+  },
+  {
+   "id": "valencia-el-palmar-el-palmar-y-paseo-en-barca",
+   "nombre": "El Palmar y paseo en barca",
+   "municipio": "València (El Palmar)",
+   "tipo": "Naturaleza / gastronomía",
+   "actividades": [
+    "Naturaleza",
+    "Gastronomía"
+   ],
+   "min": 25,
+   "km": 25,
+   "dpf": "Alargar",
+   "destino": "El Palmar, Valencia",
+   "ida": [
+    "El Saler"
+   ],
+   "vuelta": [
+    "Sollana",
+    "Silla"
+   ],
+   "epoca": "Otoño, invierno (atardeceres)",
+   "avisos": "Verano: mosquitos y calor.",
+   "nieve": "Bajo",
+   "incendios": "Parcial (la Devesa)",
+   "bano": "No",
+   "tasas": "Barcas de pago",
+   "comer": "Arrocerías de El Palmar",
+   "picnic": "Sí, en la Devesa",
+   "quever": "Paseo en barca por la Albufera, atardecer, la Devesa",
+   "lat": 39.312,
+   "lon": -0.32,
+   "wiki": "El Palmar (Valencia)"
+  },
+  {
+   "id": "cullera-castillo-faro-y-playa",
+   "nombre": "Castillo, faro y playa",
+   "municipio": "Cullera",
+   "tipo": "Costa / castillo",
+   "actividades": [
+    "Playa",
+    "Monumentos",
+    "Mirador"
+   ],
+   "min": 35,
+   "km": 45,
+   "dpf": "Alargar",
+   "destino": "Cullera, Valencia",
+   "ida": [
+    "El Saler",
+    "El Palmar",
+    "El Perellonet"
+   ],
+   "vuelta": [
+    "Sueca",
+    "Sollana"
+   ],
+   "epoca": "Primavera, otoño, invierno",
+   "avisos": "Verano: playas llenas y aparcamiento difícil.",
+   "nieve": "Bajo",
+   "incendios": "No",
+   "bano": "Sí (playa)",
+   "tasas": "Castillo con horario",
+   "comer": "Muchos restaurantes",
+   "picnic": "Sí",
+   "quever": "Castillo y santuario, faro, playas, desembocadura del Júcar",
+   "lat": 39.165,
+   "lon": -0.254,
+   "wiki": "Cullera"
+  },
+  {
+   "id": "sagunt-castillo-y-teatro-romano",
+   "nombre": "Castillo y teatro romano",
+   "municipio": "Sagunt",
+   "tipo": "Ciudad monumental",
+   "actividades": [
+    "Monumentos",
+    "Pueblo"
+   ],
+   "min": 30,
+   "km": 35,
+   "dpf": "Alargar",
+   "destino": "Sagunt, Valencia",
+   "ida": [],
+   "vuelta": [
+    "Gilet",
+    "Albalat dels Tarongers",
+    "Segart",
+    "Serra",
+    "Bétera"
+   ],
+   "epoca": "Otoño, invierno, primavera",
+   "avisos": "Verano: subida al castillo con mucho calor.",
+   "nieve": "Bajo",
+   "incendios": "No",
+   "bano": "No",
+   "tasas": "Consultar horario",
+   "comer": "Restaurantes en el casco antiguo",
+   "picnic": "No hace falta",
+   "quever": "Castillo, teatro romano, judería",
+   "lat": 39.68,
+   "lon": -0.278,
+   "wiki": "Sagunto"
+  },
+  {
+   "id": "estivella-segart-mirador-del-garbi",
+   "nombre": "Mirador del Garbí",
+   "municipio": "Estivella / Segart",
+   "tipo": "Mirador / senderismo",
+   "actividades": [
+    "Mirador",
+    "Senderismo corto"
+   ],
+   "min": 35,
+   "km": 40,
+   "dpf": "Alargar",
+   "destino": "Garbí, Estivella, Valencia",
+   "ida": [
+    "Sagunt",
+    "Estivella"
+   ],
+   "vuelta": [
+    "Segart",
+    "Serra",
+    "Náquera",
+    "Bétera"
+   ],
+   "epoca": "Otoño, invierno, primavera",
+   "avisos": "Nivel 3 de incendios: Sierra Calderona cerrada. En nevadas fuertes se ha llegado a cortar el acceso.",
+   "nieve": "Medio",
+   "incendios": "Sí (P. N. Sierra Calderona)",
+   "bano": "No",
+   "tasas": "Libre",
+   "comer": "Bares en Estivella o Segart",
+   "picnic": "Sí, área recreativa",
+   "quever": "Vistas del Camp de Morvedre hasta el mar",
+   "lat": 39.67,
+   "lon": -0.37,
+   "wiki": "Garbí"
+  },
+  {
+   "id": "serra-cartuja-de-portaceli-y-serra",
+   "nombre": "Cartuja de Portaceli y Serra",
+   "municipio": "Serra",
+   "tipo": "Naturaleza / monumento",
+   "actividades": [
+    "Naturaleza",
+    "Senderismo corto",
+    "Monumentos"
+   ],
+   "min": 30,
+   "km": 30,
+   "dpf": "Alargar",
+   "destino": "Cartuja de Portaceli, Serra, Valencia",
+   "ida": [
+    "Bétera",
+    "Náquera"
+   ],
+   "vuelta": [
+    "Olocau",
+    "Marines",
+    "Llíria"
+   ],
+   "epoca": "Otoño, invierno, primavera",
+   "avisos": "Nivel 3 de incendios: Sierra Calderona cerrada. La cartuja es de clausura: se ve por fuera.",
+   "nieve": "Bajo",
+   "incendios": "Sí (P. N. Sierra Calderona)",
+   "bano": "No",
+   "tasas": "Libre",
+   "comer": "Restaurantes en Serra",
+   "picnic": "Sí, áreas recreativas de la Calderona",
+   "quever": "Cartuja, rutas por la Calderona, castillo de Serra",
+   "lat": 39.668,
+   "lon": -0.477,
+   "wiki": "Cartuja de Portaceli"
+  },
+  {
+   "id": "navajas-salto-de-la-novia",
+   "nombre": "Salto de la Novia",
+   "municipio": "Navajas",
+   "tipo": "Naturaleza / cascada",
+   "actividades": [
+    "Naturaleza",
+    "Baño",
+    "Senderismo corto"
+   ],
+   "min": 45,
+   "km": 65,
+   "dpf": "Buena",
+   "destino": "Salto de la Novia, Navajas, Castellón",
+   "ida": [
+    "Segorbe"
+   ],
+   "vuelta": [
+    "Altura",
+    "Gátova",
+    "Marines",
+    "Llíria"
+   ],
+   "epoca": "Todo el año; verano (baño)",
+   "avisos": "Aparcamiento muy pequeño: llegar pronto.",
+   "nieve": "Bajo",
+   "incendios": "Sí",
+   "bano": "Sí, pozas (verano)",
+   "tasas": "Libre",
+   "comer": "Restaurantes en Navajas",
+   "picnic": "Sí",
+   "quever": "Cascada del Brazal (60 m), río Palancia",
+   "lat": 39.874,
+   "lon": -0.505,
+   "wiki": "Navajas"
+  },
+  {
+   "id": "segorbe-casco-historico-y-acueducto",
+   "nombre": "Casco histórico y acueducto",
+   "municipio": "Segorbe",
+   "tipo": "Ciudad monumental",
+   "actividades": [
+    "Monumentos",
+    "Pueblo"
+   ],
+   "min": 45,
+   "km": 60,
+   "dpf": "Buena",
+   "destino": "Segorbe, Castellón",
+   "ida": [],
+   "vuelta": [
+    "Altura",
+    "Gátova",
+    "Olocau",
+    "Bétera"
+   ],
+   "epoca": "Todo el año",
+   "avisos": "Septiembre: Entrada de Toros y Caballos (mucha gente).",
+   "nieve": "Bajo",
+   "incendios": "No",
+   "bano": "No",
+   "tasas": "Museos con entrada",
+   "comer": "Muchos restaurantes",
+   "picnic": "Sí, Fuente de los 50 caños",
+   "quever": "Catedral, murallas, acueducto, Fuente de los 50 caños",
+   "lat": 39.851,
+   "lon": -0.489,
+   "wiki": "Segorbe"
+  },
+  {
+   "id": "montanejos-fuente-de-los-banos",
+   "nombre": "Fuente de los Baños",
+   "municipio": "Montanejos",
+   "tipo": "Baño / naturaleza",
+   "actividades": [
+    "Baño",
+    "Naturaleza",
+    "Senderismo corto"
+   ],
+   "min": 75,
+   "km": 100,
+   "dpf": "Buena",
+   "destino": "Fuente de los Baños, Montanejos, Castellón",
+   "ida": [
+    "Vila-real",
+    "Onda",
+    "Fanzara"
+   ],
+   "vuelta": [
+    "Montán",
+    "Caudiel",
+    "Jérica",
+    "Segorbe"
+   ],
+   "epoca": "Primavera, verano (muy temprano), otoño",
+   "avisos": "Verano: masificación, llegar muy pronto. Invierno: hielo posible en la carretera.",
+   "nieve": "Medio",
+   "incendios": "Sí",
+   "bano": "Sí, agua a unos 25 ºC todo el año",
+   "tasas": "Consultar aparcamiento en verano",
+   "comer": "Restaurantes en Montanejos",
+   "picnic": "Sí",
+   "quever": "Fuente termal, Estrecho de Chillapájaros, embalse de Arenós",
+   "lat": 40.068,
+   "lon": -0.523,
+   "wiki": "Montanejos"
+  },
+  {
+   "id": "la-vall-d-uixo-cova-de-sant-josep",
+   "nombre": "Cova de Sant Josep",
+   "municipio": "La Vall d'Uixó",
+   "tipo": "Cueva / río subterráneo",
+   "actividades": [
+    "Cueva",
+    "Naturaleza"
+   ],
+   "min": 40,
+   "km": 55,
+   "dpf": "Buena",
+   "destino": "Coves de Sant Josep, La Vall d'Uixó, Castellón",
+   "ida": [],
+   "vuelta": [
+    "Alfondeguilla",
+    "Segorbe"
+   ],
+   "epoca": "Todo el año",
+   "avisos": "Fines de semana: reservar.",
+   "nieve": "Bajo",
+   "incendios": "No",
+   "bano": "No",
+   "tasas": "Entrada de pago; reservar",
+   "comer": "Restaurantes junto a la cueva y en el pueblo",
+   "picnic": "Sí, paraje de Sant Josep",
+   "quever": "Río subterráneo navegable en barca",
+   "lat": 39.826,
+   "lon": -0.243,
+   "wiki": "Cueva de San José"
+  },
+  {
+   "id": "lliria-font-de-sant-vicent-y-casco-antiguo",
+   "nombre": "Font de Sant Vicent y casco antiguo",
+   "municipio": "Llíria",
+   "tipo": "Pueblo / monumentos",
+   "actividades": [
+    "Monumentos",
+    "Pueblo"
+   ],
+   "min": 20,
+   "km": 20,
+   "dpf": "Alargar",
+   "destino": "Llíria, Valencia",
+   "ida": [],
+   "vuelta": [
+    "Marines",
+    "Olocau",
+    "Bétera"
+   ],
+   "epoca": "Todo el año",
+   "avisos": "",
+   "nieve": "Bajo",
+   "incendios": "No",
+   "bano": "No",
+   "tasas": "Libre",
+   "comer": "Restaurantes",
+   "picnic": "Sí, Font de Sant Vicent",
+   "quever": "Iglesia de la Sang, baños árabes, mausoleo romano, Font de Sant Vicent",
+   "lat": 39.625,
+   "lon": -0.597,
+   "wiki": "Liria"
+  },
+  {
+   "id": "alzira-monasterio-de-la-murta",
+   "nombre": "Monasterio de la Murta",
+   "municipio": "Alzira",
+   "tipo": "Naturaleza / monumento",
+   "actividades": [
+    "Monumentos",
+    "Naturaleza",
+    "Senderismo corto"
+   ],
+   "min": 35,
+   "km": 45,
+   "dpf": "Alargar",
+   "destino": "Monestir de la Murta, Alzira, Valencia",
+   "ida": [
+    "Alzira"
+   ],
+   "vuelta": [
+    "Corbera",
+    "Sueca"
+   ],
+   "epoca": "Otoño, invierno, primavera",
+   "avisos": "Nivel 3 de incendios: cierre del paraje.",
+   "nieve": "Bajo",
+   "incendios": "Sí",
+   "bano": "No",
+   "tasas": "Libre",
+   "comer": "En Alzira",
+   "picnic": "Sí, área recreativa",
+   "quever": "Ruinas del monasterio jerónimo en un valle",
+   "lat": 39.115,
+   "lon": -0.383,
+   "wiki": "Monasterio de Santa María de la Murta"
+  },
+  {
+   "id": "antella-assut-d-antella",
+   "nombre": "Assut d'Antella",
+   "municipio": "Antella",
+   "tipo": "Baño / río",
+   "actividades": [
+    "Baño"
+   ],
+   "min": 40,
+   "km": 50,
+   "dpf": "Buena",
+   "destino": "Assut d'Antella, Antella, Valencia",
+   "ida": [
+    "Alberic"
+   ],
+   "vuelta": [
+    "Sumacàrcer",
+    "Carcaixent"
+   ],
+   "epoca": "Verano (baño), primavera",
+   "avisos": "Verano: aforo controlado y aparcamiento de pago; prohibido entrar mesas, neveras rígidas y mobiliario de picnic.",
+   "nieve": "Bajo",
+   "incendios": "Comprobar",
+   "bano": "Sí, río Júcar (verano)",
+   "tasas": "Paraje Natural Municipal: acceso regulado y parking de pago",
+   "comer": "Bares en Antella",
+   "picnic": "Limitado (sin mesas ni neveras rígidas)",
+   "quever": "Azud del Júcar, zona de baño",
+   "lat": 39.081,
+   "lon": -0.592,
+   "wiki": "Antella"
+  },
+  {
+   "id": "alpuente-castillo-y-museo-paleontologico",
+   "nombre": "Castillo y museo paleontológico",
+   "municipio": "Alpuente",
+   "tipo": "Pueblo / dinosaurios",
+   "actividades": [
+    "Pueblo",
+    "Monumentos"
+   ],
+   "min": 70,
+   "km": 85,
+   "dpf": "Buena",
+   "destino": "Alpuente, Valencia",
+   "ida": [
+    "Llíria",
+    "Chelva",
+    "Titaguas"
+   ],
+   "vuelta": [
+    "Andilla",
+    "Alcublas",
+    "Llíria"
+   ],
+   "epoca": "Primavera, otoño",
+   "avisos": "Invierno: riesgo alto de nieve (sus aldeas quedaron incomunicadas con Filomena).",
+   "nieve": "Alto",
+   "incendios": "Parcial",
+   "bano": "No",
+   "tasas": "Museo con horario",
+   "comer": "Restaurantes en el pueblo",
+   "picnic": "Sí",
+   "quever": "Castillo, acueducto, huellas de dinosaurio, museo",
+   "lat": 39.888,
+   "lon": -1.009,
+   "wiki": "Alpuente"
+  },
+  {
+   "id": "simat-de-la-valldigna-monasterio-de-la-valldigna",
+   "nombre": "Monasterio de la Valldigna",
+   "municipio": "Simat de la Valldigna",
+   "tipo": "Monumento",
+   "actividades": [
+    "Monumentos"
+   ],
+   "min": 45,
+   "km": 60,
+   "dpf": "Buena",
+   "destino": "Monasterio de Santa María de la Valldigna, Simat de la Valldigna, Valencia",
+   "ida": [
+    "Alzira",
+    "La Barraca d'Aigües Vives",
+    "Tavernes de la Valldigna"
+   ],
+   "vuelta": [
+    "Tavernes de la Valldigna",
+    "Cullera",
+    "El Perelló"
+   ],
+   "epoca": "Todo el año",
+   "avisos": "Consultar horario de visita.",
+   "nieve": "Bajo",
+   "incendios": "No",
+   "bano": "No",
+   "tasas": "Consultar",
+   "comer": "Restaurantes en Simat y Tavernes",
+   "picnic": "Sí, Font Gran de Simat",
+   "quever": "Monasterio cisterciense, Font Gran",
+   "lat": 39.042,
+   "lon": -0.315,
+   "wiki": "Monasterio de Santa María de la Valldigna"
+  },
+  {
+   "id": "gandia-palau-ducal-y-playa",
+   "nombre": "Palau Ducal y playa",
+   "municipio": "Gandia",
+   "tipo": "Ciudad / costa",
+   "actividades": [
+    "Monumentos",
+    "Playa",
+    "Gastronomía"
+   ],
+   "min": 50,
+   "km": 70,
+   "dpf": "Buena",
+   "destino": "Gandia, Valencia",
+   "ida": [],
+   "vuelta": [
+    "Barx",
+    "Simat de la Valldigna",
+    "La Barraca d'Aigües Vives",
+    "Alzira"
+   ],
+   "epoca": "Todo el año",
+   "avisos": "Verano: playa llena.",
+   "nieve": "Bajo",
+   "incendios": "No",
+   "bano": "Sí (playa)",
+   "tasas": "Palau con entrada",
+   "comer": "Muchos restaurantes (fideuà)",
+   "picnic": "Sí",
+   "quever": "Palacio de los Borja, playa, casco antiguo",
+   "lat": 38.967,
+   "lon": -0.181,
+   "wiki": "Gandía"
+  },
+  {
+   "id": "venta-del-moro-hoces-del-cabriel-en-casas-del-rio",
+   "nombre": "Hoces del Cabriel en Casas del Río",
+   "municipio": "Venta del Moro",
+   "tipo": "Naturaleza / río",
+   "actividades": [
+    "Naturaleza",
+    "Mirador",
+    "Senderismo corto"
+   ],
+   "min": 80,
+   "km": 105,
+   "dpf": "Buena",
+   "destino": "Casas del Río, Venta del Moro, Valencia",
+   "ida": [
+    "Requena",
+    "Venta del Moro"
+   ],
+   "vuelta": [
+    "Villargordo del Cabriel",
+    "Utiel"
+   ],
+   "epoca": "Primavera, otoño",
+   "avisos": "Verano: mucho calor. Invierno: heladas en la meseta de Requena-Utiel.",
+   "nieve": "Medio",
+   "incendios": "Sí (P. N. Hoces del Cabriel)",
+   "bano": "Comprobar",
+   "tasas": "Libre",
+   "comer": "Poco: bares en Venta del Moro",
+   "picnic": "Sí, llevar comida",
+   "quever": "Hoces y meandros del Cabriel, viñedos de Requena-Utiel por el camino",
+   "lat": 39.395,
+   "lon": -1.33,
+   "wiki": "Parque natural de las Hoces del Cabriel"
+  },
+  {
+   "id": "cofrentes-castillo-y-volcan-de-cofrentes",
+   "nombre": "Castillo y volcán de Cofrentes",
+   "municipio": "Cofrentes",
+   "tipo": "Pueblo / naturaleza",
+   "actividades": [
+    "Monumentos",
+    "Mirador",
+    "Naturaleza",
+    "Pueblo"
+   ],
+   "min": 70,
+   "km": 95,
+   "dpf": "Buena",
+   "destino": "Cofrentes, Valencia",
+   "ida": [
+    "Requena"
+   ],
+   "vuelta": [
+    "Cortes de Pallás",
+    "Dos Aguas",
+    "Turís"
+   ],
+   "epoca": "Otoño, invierno, primavera",
+   "avisos": "Verano: calor. Vuelta por Cortes: muchas curvas, sin prisa.",
+   "nieve": "Medio",
+   "incendios": "Parcial",
+   "bano": "Comprobar",
+   "tasas": "Castillo: consultar horario",
+   "comer": "Restaurantes en Cofrentes",
+   "picnic": "Sí",
+   "quever": "Castillo sobre la confluencia del Júcar y el Cabriel, volcán Cerro de Agrás",
+   "lat": 39.233,
+   "lon": -1.06,
+   "wiki": "Cofrentes"
+  },
+  {
+   "id": "ayora-castillos-de-ayora-y-jalance",
+   "nombre": "Castillos de Ayora y Jalance",
+   "municipio": "Ayora",
+   "tipo": "Pueblo / monumentos",
+   "actividades": [
+    "Monumentos",
+    "Pueblo",
+    "Mirador"
+   ],
+   "min": 80,
+   "km": 110,
+   "dpf": "Buena",
+   "destino": "Ayora, Valencia",
+   "ida": [
+    "Requena",
+    "Cofrentes",
+    "Jalance"
+   ],
+   "vuelta": [
+    "Enguera"
+   ],
+   "epoca": "Otoño, invierno, primavera",
+   "avisos": "Invierno: frío y heladas en el valle.",
+   "nieve": "Medio",
+   "incendios": "No",
+   "bano": "No",
+   "tasas": "Libre",
+   "comer": "Restaurantes en Ayora (gazpacho manchego)",
+   "picnic": "Sí",
+   "quever": "Castillo de Ayora, castillo de Jalance, valle de Ayora",
+   "lat": 39.058,
+   "lon": -1.056,
+   "wiki": "Ayora"
+  },
+  {
+   "id": "bicorp-cuevas-de-la-arana-y-charcos-de-quesa",
+   "nombre": "Cuevas de la Araña y charcos de Quesa",
+   "municipio": "Bicorp",
+   "tipo": "Arqueología / baño",
+   "actividades": [
+    "Monumentos",
+    "Baño",
+    "Senderismo corto"
+   ],
+   "min": 75,
+   "km": 95,
+   "dpf": "Buena",
+   "destino": "Bicorp, Valencia",
+   "ida": [
+    "Xàtiva",
+    "Navarrés",
+    "Quesa"
+   ],
+   "vuelta": [
+    "Quesa",
+    "Navarrés",
+    "Enguera"
+   ],
+   "epoca": "Primavera, otoño; verano (charcos)",
+   "avisos": "Pinturas rupestres: visita guiada, consultar horario. Verano: charcos de Quesa concurridos.",
+   "nieve": "Bajo",
+   "incendios": "Sí",
+   "bano": "Sí, charcos de Quesa (verano)",
+   "tasas": "Visita guiada a las pinturas",
+   "comer": "Bares en Bicorp y Quesa",
+   "picnic": "Sí",
+   "quever": "Pinturas rupestres (arte levantino), charcos del río Grande en Quesa",
+   "lat": 39.132,
+   "lon": -0.787,
+   "wiki": "Bicorp"
+  },
+  {
+   "id": "jerica-torre-mudejar-y-rio-palancia",
+   "nombre": "Torre mudéjar y río Palancia",
+   "municipio": "Jérica",
+   "tipo": "Pueblo / monumentos",
+   "actividades": [
+    "Pueblo",
+    "Monumentos",
+    "Baño"
+   ],
+   "min": 55,
+   "km": 75,
+   "dpf": "Buena",
+   "destino": "Jérica, Castellón",
+   "ida": [
+    "Segorbe"
+   ],
+   "vuelta": [
+    "Navajas",
+    "Altura",
+    "Gátova",
+    "Olocau"
+   ],
+   "epoca": "Todo el año; verano (baño)",
+   "avisos": "Invierno: frío en el Alto Palancia.",
+   "nieve": "Medio",
+   "incendios": "Parcial",
+   "bano": "Sí, río Palancia (verano)",
+   "tasas": "Libre",
+   "comer": "Restaurantes en el pueblo",
+   "picnic": "Sí",
+   "quever": "Torre de las Campanas, castillo, puente sobre el Palancia",
+   "lat": 39.912,
+   "lon": -0.571,
+   "wiki": "Jérica"
+  },
+  {
+   "id": "eslida-sierra-de-espadan-eslida-y-alcornocales",
+   "nombre": "Sierra de Espadán: Eslida y alcornocales",
+   "municipio": "Eslida",
+   "tipo": "Naturaleza / pueblos",
+   "actividades": [
+    "Naturaleza",
+    "Pueblo",
+    "Senderismo corto",
+    "Mirador"
+   ],
+   "min": 65,
+   "km": 80,
+   "dpf": "Buena",
+   "destino": "Eslida, Castellón",
+   "ida": [
+    "Segorbe",
+    "Soneja",
+    "Azuébar",
+    "Chóvar"
+   ],
+   "vuelta": [
+    "Artana",
+    "Nules"
+   ],
+   "epoca": "Otoño, invierno, primavera",
+   "avisos": "Nivel 3 de incendios: Sierra de Espadán cerrada. Carreteras estrechas de montaña.",
+   "nieve": "Bajo",
+   "incendios": "Sí (P. N. Sierra de Espadán)",
+   "bano": "No",
+   "tasas": "Libre",
+   "comer": "Bares y restaurantes en Eslida",
+   "picnic": "Sí, fuentes y áreas recreativas",
+   "quever": "Bosques de alcornoques, fuentes, pueblos de la sierra",
+   "lat": 39.882,
+   "lon": -0.302,
+   "wiki": "Eslida"
+  },
+  {
+   "id": "vilafames-vilafames",
+   "nombre": "Vilafamés",
+   "municipio": "Vilafamés",
+   "tipo": "Pueblo / arte",
+   "actividades": [
+    "Pueblo",
+    "Monumentos",
+    "Mirador"
+   ],
+   "min": 75,
+   "km": 110,
+   "dpf": "Buena",
+   "destino": "Vilafamés, Castellón",
+   "ida": [
+    "Castelló de la Plana"
+   ],
+   "vuelta": [
+    "L'Alcora",
+    "Onda",
+    "Betxí"
+   ],
+   "epoca": "Todo el año",
+   "avisos": "Verano: calor en las cuestas del casco.",
+   "nieve": "Bajo",
+   "incendios": "No",
+   "bano": "No",
+   "tasas": "Museo con entrada",
+   "comer": "Restaurantes en el pueblo",
+   "picnic": "No hace falta",
+   "quever": "Casco medieval, roca roja, castillo, museo de arte contemporáneo",
+   "lat": 40.115,
+   "lon": -0.055,
+   "wiki": "Villafamés"
+  },
+  {
+   "id": "alcoi-alcoi-y-font-roja",
+   "nombre": "Alcoi y Font Roja",
+   "municipio": "Alcoi",
+   "tipo": "Ciudad / naturaleza",
+   "actividades": [
+    "Monumentos",
+    "Naturaleza",
+    "Senderismo corto",
+    "Mirador"
+   ],
+   "min": 80,
+   "km": 110,
+   "dpf": "Buena",
+   "destino": "Alcoi, Alicante",
+   "ida": [
+    "Xàtiva",
+    "Albaida"
+   ],
+   "vuelta": [
+    "Cocentaina",
+    "Muro de Alcoy",
+    "Beniarrés",
+    "Gandia"
+   ],
+   "epoca": "Otoño, primavera, invierno con sol",
+   "avisos": "Invierno: puede nevar en la Font Roja. Nivel 3 de incendios: parque cerrado. Abril: Moros y Cristianos (mucha gente).",
+   "nieve": "Medio",
+   "incendios": "Sí (P. N. Font Roja)",
+   "bano": "No",
+   "tasas": "Libre",
+   "comer": "Muchos restaurantes en Alcoi",
+   "picnic": "Sí, área de la Font Roja",
+   "quever": "Puentes y modernismo de Alcoi, carrascal y santuario de la Font Roja",
+   "lat": 38.698,
+   "lon": -0.474,
+   "wiki": "Alcoy"
+  },
+  {
+   "id": "vall-de-gallinera-vall-de-gallinera",
+   "nombre": "Vall de Gallinera",
+   "municipio": "Vall de Gallinera",
+   "tipo": "Pueblos / paisaje",
+   "actividades": [
+    "Pueblo",
+    "Naturaleza",
+    "Mirador",
+    "Senderismo corto"
+   ],
+   "min": 80,
+   "km": 105,
+   "dpf": "Buena",
+   "destino": "Benissivà, Vall de Gallinera, Alicante",
+   "ida": [
+    "Gandia",
+    "Oliva",
+    "Pego"
+   ],
+   "vuelta": [
+    "Planes",
+    "Muro de Alcoy",
+    "Albaida",
+    "Xàtiva"
+   ],
+   "epoca": "Primavera (cerezos en flor), otoño",
+   "avisos": "Finales de marzo–abril: cerezos en flor, muy concurrido. Carretera estrecha.",
+   "nieve": "Bajo",
+   "incendios": "Parcial",
+   "bano": "No",
+   "tasas": "Libre",
+   "comer": "Restaurantes en los pueblos del valle",
+   "picnic": "Sí",
+   "quever": "Ocho pueblos en un valle de cerezos, castillo de Benissili",
+   "lat": 38.817,
+   "lon": -0.253,
+   "wiki": "Vall de Gallinera"
+  },
+  {
+   "id": "denia-castillo-de-denia-y-montgo",
+   "nombre": "Castillo de Dénia y Montgó",
+   "municipio": "Dénia",
+   "tipo": "Costa / castillo",
+   "actividades": [
+    "Monumentos",
+    "Playa",
+    "Mirador",
+    "Gastronomía"
+   ],
+   "min": 80,
+   "km": 105,
+   "dpf": "Buena",
+   "destino": "Castillo de Dénia, Dénia, Alicante",
+   "ida": [
+    "Gandia",
+    "Oliva"
+   ],
+   "vuelta": [
+    "Pego",
+    "Oliva",
+    "Gandia"
+   ],
+   "epoca": "Otoño, invierno, primavera",
+   "avisos": "Verano: tráfico y aparcamiento muy difíciles.",
+   "nieve": "Bajo",
+   "incendios": "Parcial (Montgó)",
+   "bano": "Sí (playa)",
+   "tasas": "Castillo con entrada",
+   "comer": "Muchos restaurantes (gamba roja)",
+   "picnic": "Sí",
+   "quever": "Castillo, puerto, Les Rotes, Montgó",
+   "lat": 38.84,
+   "lon": 0.106,
+   "wiki": "Denia"
+  },
+  {
+   "id": "xabia-xabia-cap-de-sant-antoni-y-cap-de-la-nau",
+   "nombre": "Xàbia: Cap de Sant Antoni y Cap de la Nau",
+   "municipio": "Xàbia",
+   "tipo": "Costa / miradores",
+   "actividades": [
+    "Mirador",
+    "Playa",
+    "Senderismo corto"
+   ],
+   "min": 90,
+   "km": 115,
+   "dpf": "Buena",
+   "destino": "Cabo de San Antonio, Xàbia, Alicante",
+   "ida": [
+    "Gandia",
+    "Ondara"
+   ],
+   "vuelta": [
+    "Dénia",
+    "Ondara",
+    "Pego"
+   ],
+   "epoca": "Otoño, invierno, primavera",
+   "avisos": "Límite de 90 min. Verano: masificado.",
+   "nieve": "Bajo",
+   "incendios": "Parcial (Montgó)",
+   "bano": "Sí (calas)",
+   "tasas": "Libre",
+   "comer": "Restaurantes en Xàbia y el puerto",
+   "picnic": "Sí",
+   "quever": "Faros y acantilados del Cap de Sant Antoni y Cap de la Nau, calas",
+   "lat": 38.795,
+   "lon": 0.19,
+   "wiki": "Jávea"
+  },
+  {
+   "id": "aras-de-los-olmos-aras-de-los-olmos",
+   "nombre": "Aras de los Olmos",
+   "municipio": "Aras de los Olmos",
+   "tipo": "Pueblo / cielo nocturno",
+   "actividades": [
+    "Pueblo",
+    "Naturaleza",
+    "Mirador"
+   ],
+   "min": 90,
+   "km": 115,
+   "dpf": "Buena",
+   "destino": "Aras de los Olmos, Valencia",
+   "ida": [
+    "Llíria",
+    "Chelva",
+    "Titaguas"
+   ],
+   "vuelta": [
+    "Alpuente",
+    "Andilla",
+    "Alcublas"
+   ],
+   "epoca": "Primavera, verano, otoño",
+   "avisos": "Límite de 90 min. Invierno: riesgo alto de nieve y hielo.",
+   "nieve": "Alto",
+   "incendios": "Parcial",
+   "bano": "No",
+   "tasas": "Observatorio con visitas: consultar",
+   "comer": "Restaurantes en el pueblo",
+   "picnic": "Sí",
+   "quever": "Pueblo serrano, observatorio astronómico, cielos oscuros",
+   "lat": 39.926,
+   "lon": -1.133,
+   "wiki": "Aras de los Olmos"
+  }
+ ]
+}

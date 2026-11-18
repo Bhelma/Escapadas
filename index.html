@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Escapadas</title>
+<meta name="theme-color" content="#1f5f4a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<style>
+:root{
+  --bg:#f5f4ef; --card:#ffffff; --ink:#1d2421; --muted:#66706b; --line:#e2e0d8;
+  --brand:#1f5f4a; --brand-2:#2f8a6a; --accent:#c8553d;
+  --ok:#2e7d4f; --ok-bg:#e3f2e8; --warn:#9a6400; --warn-bg:#fdf1d8; --bad:#b3261e; --bad-bg:#fbe3e1; --info-bg:#e6eef7; --info:#2f5d8a;
+  --radius:14px; --shadow:0 1px 2px rgba(0,0,0,.06),0 4px 14px rgba(0,0,0,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#121614; --card:#1b201e; --ink:#e7ece9; --muted:#9aa49f; --line:#2b322f;
+    --brand:#5cc49b; --brand-2:#79d3ae; --ok-bg:#16301f; --ok:#7fd39d; --warn-bg:#33280f; --warn:#f0c46a; --bad-bg:#3a1714; --bad:#ff9b92; --info-bg:#172535; --info:#9cc3ec;
+    --shadow:none;}
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
+header{position:sticky;top:0;z-index:20;background:var(--brand);color:#fff;padding:calc(10px + env(safe-area-inset-top)) 16px 10px}
+@media (prefers-color-scheme: dark){header{background:#173a2e}}
+header h1{margin:0;font-size:1.15rem;font-weight:650;letter-spacing:.2px}
+header .sub{font-size:.8rem;opacity:.85}
+main{max-width:760px;margin:0 auto;padding:12px}
+.view{display:none}.view.active{display:block}
+nav.tabs{position:fixed;bottom:0;left:0;right:0;z-index:30;display:flex;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav.tabs button{flex:1;border:0;background:none;color:var(--muted);padding:9px 4px 8px;font-size:.72rem;display:flex;flex-direction:column;align-items:center;gap:2px}
+nav.tabs button svg{width:22px;height:22px}
+nav.tabs button.active{color:var(--brand)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px;margin-bottom:12px}
+.card h2{margin:0 0 8px;font-size:1rem}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+label.lbl{display:block;font-size:.78rem;color:var(--muted);margin:10px 0 4px;font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+.seg{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{flex:1;border:0;background:transparent;padding:9px 6px;color:var(--ink);font-size:.9rem}
+.seg button.on{background:var(--brand);color:#fff}
+@media (prefers-color-scheme: dark){.seg button.on{color:#0e1b16}}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 11px;font-size:.86rem}
+.chip.on{background:var(--brand);border-color:var(--brand);color:#fff}
+@media (prefers-color-scheme: dark){.chip.on{color:#0e1b16}}
+input[type=date],input[type=text],input[type=number],input[type=url],input[type=password],textarea,select{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+textarea{min-height:70px}
+input[type=range]{width:100%}
+.btn{border:0;border-radius:10px;padding:10px 14px;font:inherit;font-weight:600;background:var(--brand);color:#fff;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px;justify-content:center}
+@media (prefers-color-scheme: dark){.btn{color:#0e1b16}}
+.btn.sec{background:transparent;color:var(--brand);border:1px solid var(--brand)}
+.btn.ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.btn.small{padding:6px 10px;font-size:.85rem}
+.btn.block{width:100%}
+.toggle{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:.92rem}
+.site{display:flex;gap:12px;cursor:pointer}
+.site .thumb{width:84px;height:84px;border-radius:10px;background:var(--line) center/cover no-repeat;flex:none}
+.site .body{flex:1;min-width:0}
+.site h3{margin:0;font-size:1rem;line-height:1.25}
+.site .mun{color:var(--muted);font-size:.85rem}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.b{font-size:.74rem;padding:2px 8px;border-radius:999px;background:var(--line);color:var(--ink);white-space:nowrap}
+.b.ok{background:var(--ok-bg);color:var(--ok)}.b.warn{background:var(--warn-bg);color:var(--warn)}.b.bad{background:var(--bad-bg);color:var(--bad)}.b.info{background:var(--info-bg);color:var(--info)}
+.muted{color:var(--muted)}.small{font-size:.85rem}
+.empty{text-align:center;color:var(--muted);padding:30px 10px}
+#map{height:calc(100vh - 170px);border-radius:var(--radius);border:1px solid var(--line)}
+/* detalle */
+#detail{position:fixed;inset:0;z-index:50;background:var(--bg);overflow-y:auto;display:none}
+#detail.open{display:block}
+.dhead{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:8px;background:var(--brand);color:#fff;padding:calc(10px + env(safe-area-inset-top)) 12px 10px}
+@media (prefers-color-scheme: dark){.dhead{background:#173a2e}}
+.dhead button{background:none;border:0;color:#fff;font-size:1.4rem;line-height:1;padding:4px 8px}
+.dhead h2{margin:0;font-size:1.02rem;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gallery{display:flex;gap:6px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -12px;padding:0 12px}
+.gallery img{height:210px;border-radius:12px;scroll-snap-align:start;flex:none;max-width:88vw;object-fit:cover;background:var(--line)}
+dl.facts{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:0}
+dl.facts dt{color:var(--muted);font-size:.85rem}
+dl.facts dd{margin:0;font-size:.92rem}
+.routes{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.routes .full{grid-column:1/-1}
+.food li{margin-bottom:6px}
+.food a{color:var(--brand)}
+.wx{display:flex;align-items:center;gap:10px}
+.wx .ico{font-size:1.9rem}
+.visit{border-top:1px solid var(--line);padding-top:8px;margin-top:8px}
+.toast{position:fixed;left:50%;bottom:calc(80px + env(safe-area-inset-bottom));transform:translateX(-50%);background:#222;color:#fff;padding:10px 14px;border-radius:10px;z-index:80;font-size:.9rem;max-width:90vw;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.show{opacity:1}
+.stat{display:flex;gap:10px}
+.stat div{flex:1;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+.stat b{display:block;font-size:1.4rem}
+a{color:var(--brand)}
+.stars button{background:none;border:0;font-size:1.5rem;color:#c9b458;padding:0 2px}
+progress{width:100%}
+</style>
+</head>
+<body>
+<header>
+  <h1>Escapadas en coche</h1>
+  <div class="sub" id="hdrSub">Comunitat Valenciana · hasta 90 min</div>
+</header>
+
+<main>
+  <!-- PLANEAR -->
+  <section class="view active" id="v-plan">
+    <div class="card">
+      <h2>¿Qué hacemos?</h2>
+      <label class="lbl">Día</label>
+      <div class="seg" id="daySeg"></div>
+      <input type="date" id="dayCustom" style="margin-top:6px;display:none">
+      <label class="lbl">Salgo desde</label>
+      <div class="seg" id="originSeg">
+        <button data-o="home" class="on">Aldaia</button>
+        <button data-o="gps">Mi ubicación</button>
+      </div>
+      <label class="lbl">Qué me apetece hacer allí</label>
+      <div class="chips" id="actChips"></div>
+      <label class="lbl">Tiempo máximo en coche (directo): <span id="maxMinLbl">90</span> min</label>
+      <input type="range" id="maxMin" min="20" max="90" step="5" value="90">
+      <label class="toggle"><input type="checkbox" id="hideVisited"> Ocultar los que ya he visitado</label>
+      <label class="toggle"><input type="checkbox" id="onlySeason" checked> Solo los que van bien en esta época</label>
+      <label class="toggle"><input type="checkbox" id="dpfOnly"> Solo trayectos largos (buenos para el DPF)</label>
+      <div class="row" style="margin-top:12px">
+        <button class="btn" id="btnSurprise">🎲 Sorpréndeme</button>
+        <a class="btn ghost small" id="lnkFire" target="_blank" rel="noopener" href="https://wpr.112cv.gva.es/external/api/storage/descargar/pdf/previfoc/previfoc.pdf">🔥 Nivel de incendios</a>
+        <a class="btn ghost small" target="_blank" rel="noopener" href="https://infocar.dgt.es/etraffic/">🚧 Carreteras DGT</a>
+      </div>
+      <div class="small muted" id="planStatus" style="margin-top:8px"></div>
+    </div>
+    <div id="results"></div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="view" id="v-map">
+    <div id="map"></div>
+    <div class="small muted" style="margin-top:6px">Verde: visitado · Azul: pendiente. Toca un punto para ver la ficha.</div>
+  </section>
+
+  <!-- VISITADOS -->
+  <section class="view" id="v-visits">
+    <div class="stat" id="stats"></div>
+    <div id="visitList" style="margin-top:12px"></div>
+  </section>
+
+  <!-- AJUSTES -->
+  <section class="view" id="v-settings">
+    <div class="card">
+      <h2>Punto de salida habitual</h2>
+      <div class="row">
+        <div style="flex:1"><label class="lbl">Nombre</label><input type="text" id="sHomeName"></div>
+      </div>
+      <div class="row">
+        <div style="flex:1"><label class="lbl">Latitud</label><input type="number" step="0.0001" id="sHomeLat"></div>
+        <div style="flex:1"><label class="lbl">Longitud</label><input type="number" step="0.0001" id="sHomeLon"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Nextcloud (fotos e historial)</h2>
+      <p class="small muted" style="margin-top:0">Las visitas se guardan en <code>escapadas-visitas.json</code> y las fotos en una carpeta por lugar, dentro de la carpeta que elijas. Usa una contraseña de aplicación de Nextcloud, no tu contraseña normal.</p>
+      <label class="lbl">Dirección de tu Nextcloud (https, por Tailscale)</label>
+      <input type="url" id="sNcUrl" placeholder="https://nuc.tu-tailnet.ts.net">
+      <div class="row">
+        <div style="flex:1"><label class="lbl">Usuario</label><input type="text" id="sNcUser" autocomplete="username"></div>
+        <div style="flex:1"><label class="lbl">Contraseña de aplicación</label><input type="password" id="sNcPass" autocomplete="current-password"></div>
+      </div>
+      <label class="lbl">Carpeta</label>
+      <input type="text" id="sNcFolder" placeholder="Escapadas">
+      <div class="row" style="margin-top:12px">
+        <button class="btn" id="btnSaveSettings">Guardar</button>
+        <button class="btn sec" id="btnTestNc">Probar conexión</button>
+      </div>
+      <div class="small" id="ncStatus" style="margin-top:8px"></div>
+    </div>
+    <div class="card">
+      <h2>Copia de seguridad</h2>
+      <p class="small muted" style="margin-top:0">Además de Nextcloud, puedes descargar o cargar el historial a mano.</p>
+      <div class="row">
+        <button class="btn sec" id="btnExport">Descargar historial</button>
+        <label class="btn ghost">Cargar historial<input type="file" id="fileImport" accept="application/json" hidden></label>
+      </div>
+    </div>
+    <div class="card small muted">
+      Base de datos: <span id="dbInfo"></span>.<br>
+      Tiempos en coche: OSRM (OpenStreetMap). Tiempo: Open-Meteo. Fotos e información: Wikipedia / Wikimedia Commons. Comida cercana: OpenStreetMap.
+    </div>
+  </section>
+</main>
+
+<div id="detail"></div>
+<div class="toast" id="toast"></div>
+
+<nav class="tabs">
+  <button data-v="plan" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3l9 9-9 9"/></svg>Planear</button>
+  <button data-v="map"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</button>
+  <button data-v="visits"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Visitados</button>
+  <button data-v="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>Ajustes</button>
+</nav>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="app.js"></script>
+</body>
+</html>
